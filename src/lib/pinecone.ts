@@ -3,7 +3,7 @@ import { downloadS3File } from "./s3-server";
 import { PDFLoader } from "@langchain/community/document_loaders/fs/pdf"
 import { Document,RecursiveCharacterTextSplitter} from '@pinecone-database/doc-splitter'
 import {getEmbeddings} from "./embedding";
-import md5 from 'md5'
+import md5 from "md5";
 import { metadata } from "@/app/layout";
 import { convertToAscii } from "./utils";
 
