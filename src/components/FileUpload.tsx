@@ -31,7 +31,7 @@ const FileUpload = () => {
         },
         });
         
-    const onDrop = useCallback(acceptedFiles => {
+    const onDrop = useCallback((acceptedFiles: any) => {
         // Do something with the files
         console.log("acceptedFiles",acceptedFiles);
       }, [])
