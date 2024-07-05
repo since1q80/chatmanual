@@ -27,6 +27,7 @@
     "drizzle-orm": "^0.31.2",
     "langchain": "^0.2.8",
     "lucide-react": "^0.397.0",
+    "markdown-to-jsx": "^7.4.7",
     "md5": "^2.3.0",
     "next": "14.2.4",
     "openai": "^4.52.3",

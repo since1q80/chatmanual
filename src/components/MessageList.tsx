@@ -1,6 +1,7 @@
 import { Message } from 'ai/react'
 import React from 'react'
 import { cn } from "@/lib/utils";
+import Markdown from 'markdown-to-jsx';
 
 type Props ={
     messages:Message[]
@@ -22,7 +23,12 @@ export const MessageList = ({messages}: Props) => {
                             'bg-blue-600 text-white':message.role === 'user',
                         })
                     }>
-                        <p>{message.content}</p>
+                        <Markdown className={cn(
+                  {'prose dark:prose-invert prose-p:leading-relaxed prose-pre:p-0 max-w-none break-words text-black dark:text-white text-sm md:text-base font-medium':message.role==='assistant'}
+                )}>
+                    {message.content}    
+                    </Markdown>
+                        
                     </div>
 
                     </div>
